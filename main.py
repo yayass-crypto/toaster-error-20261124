@@ -13,6 +13,7 @@ def main() -> None:
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
         f.write(ENTRY)
     print(ENTRY)
+    print(f"entry: {len(ENTRY)} chars, {len(ENTRY.encode('utf-8'))} bytes")
 
 
 if __name__ == "__main__":
